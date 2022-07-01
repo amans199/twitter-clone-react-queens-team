@@ -25,7 +25,6 @@ const AppButton = ({label, icon, variant, disabled, color, onClick}: Props) => {
     lineHeight:1
   };
   return (
-    <>
     <Button 
       style={styles}
       variant={variant}
@@ -36,7 +35,6 @@ const AppButton = ({label, icon, variant, disabled, color, onClick}: Props) => {
       <Icon component={icon} sx={{ fontSize: '1.2rem' }}/>
       {label}
     </Button>
-    </>
   )
 }
 
