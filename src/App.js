@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import './App.scss';
-import  './scss/custom.scss'
+import './scss/custom.scss'
+import InputComp from './components/InputComp';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Colors According the customize theme</h1>
-    
-  <button type="button" class="btn btn-primary">primary</button>
-  <button type="button" class="btn btn-success">success</button>
+        <h1>Colors According the customize theme</h1>
 
-        <img src={logo} className="App-logo" alt="logo" />
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-success">success</button>
+
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p className='text-info'>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,7 +23,10 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        
+        {/* input component */}
+        <InputComp />
       </header>
     </div>
   );
