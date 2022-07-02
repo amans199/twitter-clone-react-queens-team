@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.scss';
 import './scss/custom.scss'
 import HomePageLayout from './pages/HomePageLayout';
+import InputComp from './components/InputComp';
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
           Learn React
         </a> */}
 
-        
-
+{/* input component */}
+        <InputComp />
       </header>
 
       {/* < HomePageLayout /> */}
