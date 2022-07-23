@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+
+import React from "react"
 import './App.scss';
 import './scss/custom.scss'
-import HomePageLayout from './pages/HomePageLayout';
+import Signin from './pages/signIn'
 import InputComp from './components/InputComp';
 
 function App() {
   return (
-    <div className="App">
+  
+    <>
+      <Signin></Signin>
+      <div className="App">
       <header className="App-header">
+      
         <h1>Colors According the customize theme</h1>
 
         <button type="button" class="btn btn-primary">primary</button>
@@ -31,7 +36,9 @@ function App() {
       </header>
 
       {/* < HomePageLayout /> */}
+
     </div >
+    </>
   );
 }
 
