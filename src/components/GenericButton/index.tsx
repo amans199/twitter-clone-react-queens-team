@@ -1,64 +1,44 @@
 import React from 'react';
 import { Button } from '@mui/material'
-import Icon from '@mui/material/Icon';
-import './style.scss'
+ import AppIcon from '../AppIcons';
 
 interface Props {
-  icon?: any,
+  iconName?:string,
+  iconSize?:number,
   classNames?:string,
   variant?: "text" | "outlined" | "contained" ,
   label?: string,
   disabled?: boolean,
-  
-
   onClick: () => void;
-
 }
-
-const AppButton = ({icon,label, classNames,variant, disabled, onClick}: Props) => {
-
-  // const styles: React.CSSProperties = {
-
-  //  justifyContent:'center',
-  //   alignItems: 'center',
-  //   fontSize: '0.9rem',
-  //   fontWeight: '600',
-  //   borderRadius: '30px',
-  //   height: 45,
-  //   padding: '0 30px',
-  //   textTransform: "none",
-  //   lineHeight:1,
-  //  marginTop:'30px',
-  //   width:'300px'
-  // };
+const AppButton = ({iconName,iconSize,label, classNames,variant, disabled, onClick}: Props) => {
   const forButton = {
-    fontSize: '0.9rem',
+    fontSize: '1rem',
     fontWeight: '600',
-
+    display:'flex',
+   alignItems: "center",
+   justifyContent: "center",
     borderRadius: "30px",
     padding: "10px 10px",
     textTransform: "none",
-   textAlign:'center',
-    marginTop: "30px",
-    width: "300px",
-  };
-  return (
+     marginTop: "30px",
+    width: "100%",
+  }
+ return (
     <Button 
       sx={forButton}
-     
       variant={variant}
-      
       onClick= {onClick}
       disabled= {disabled}
-  
       className={classNames}
-      
-    >
-      <Icon component={icon} sx={{ fontSize: '1.2rem' }}/>
-     
-      {label}
+      >
+   <span>
+      {iconName&&<AppIcon name={iconName} size={iconSize}/>}
+     </span>
+   <span >
+   {label}
+   </span>
     </Button>
   )
 }
-
 export default AppButton

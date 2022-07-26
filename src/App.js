@@ -3,20 +3,22 @@ import React from "react"
 import './App.scss';
 import './scss/custom.scss'
 import Signin from './pages/signIn'
-import InputComp from './components/InputComp';
+
+import BasicModal from "./components/Modal";
+
 
 function App() {
   return (
   
     <>
-      <Signin></Signin>
+      {/* <Signin></Signin> */}
+   
       <div className="App">
       <header className="App-header">
       
         <h1>Colors According the customize theme</h1>
 
-        <button type="button" class="btn btn-primary">primary</button>
-        <button type="button" class="btn btn-success">success</button>
+        <BasicModal></BasicModal>
 
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p className='text-info'>
@@ -32,7 +34,7 @@ function App() {
         </a> */}
 
 {/* input component */}
-        <InputComp />
+     
       </header>
 
       {/* < HomePageLayout /> */}

@@ -1,16 +1,16 @@
 import React from "react";
 import AppButton from '../../components/GenericButton';
-import AppleIcon from "@mui/icons-material/Apple";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import InputComp from "../../components/InputComp";
+import InputComp from "../../components/InputCom";
 import SpecialButton from "../../components/SpecialButton";
+import AppIcon from "../../components/AppIcons";
 
 function Signin() {
   const forTypography = {
-    margin: "-25px auto",
+    margin: "-28px auto",
     textAlign: "center",
     borderRadius: "50%",
     background: "#15202B",
@@ -18,13 +18,17 @@ function Signin() {
     height: "50px",
     lineHeight: "50px",
     color: "#fff",
-    zIndex: 100,
+    zIndex: 40,
   };
   return (
-    <div className="d-flex flex-column align-items-center bg-dark p-5 ">
+
+   <div className="d-flex flex-column align-items-center bg-dark  ">
+  <AppIcon name="twitter" color="#ffffff"  size={55}/>
       <h1 className="text-light mb-5">Sign in to Twitter</h1>
     <SpecialButton></SpecialButton>
       <AppButton
+      iconName="apple"
+      iconSize={20}
        classNames="bg-light text-dark"
         variant="contained"
         label="Sign in with Apple"
@@ -32,8 +36,8 @@ function Signin() {
      
         onClick={() => {}}
       ></AppButton>
-      <Box sx={{ marginTop: "50px", marginBottom: "30px" }}>
-        <Divider sx={{ background: "#657786", width: "300px" }} />
+      <Box sx={{ marginTop: "50px", marginBottom: "30px" ,  width: "100%" }}>
+        <Divider sx={{ background: "#657786" }} />
         <Typography variant="h4" component="div" sx={forTypography}>
           or
         </Typography>
@@ -69,6 +73,7 @@ function Signin() {
         </Link>
       </Box>
     </div>
+
   );
 }
 

@@ -15,7 +15,7 @@ function SpecialButton() {
     textTransform: "none",
 
     marginTop: "30px",
-    width: "300px",
+    width: "100%",
   };
   return (
     <Button sx={forBox} variant="contained" color="inherit">
@@ -27,7 +27,7 @@ function SpecialButton() {
         </Box>
       </Box>
 
-      <img src={googleImage} alt="" />
+      <img src={googleImage} alt="googleImage" />
     </Button>
   );
 }
