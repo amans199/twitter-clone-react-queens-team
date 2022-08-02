@@ -16,6 +16,7 @@ import Toolbar from '@mui/material/Toolbar';
 import AppIcon from '../AppIcons';
 import './style.scss'
 import TweetButon from '../TweetButton';
+import TweetModal from '../TweetModal';
 
 const drawerWidth = 280;
 
@@ -26,6 +27,7 @@ interface Props {
 
 export default function ResponsiveDrawer(props: Props) {
   const { window } = props;
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -55,9 +57,9 @@ const sidebarItems=[{text:'Home',icon:'home'}, {text:'Explore',icon:'hashtag'}, 
           </ListItem>
         ))}
           <ListItem>
-      
-        <TweetButon labal="Tweet" className="bg-primary" />
-     
+          {/* <TweetButon labal="Tweet" className="bg-primary"  onClick={()=>{}}/> */}
+
+<TweetModal/>
         </ListItem>
       </List>
 

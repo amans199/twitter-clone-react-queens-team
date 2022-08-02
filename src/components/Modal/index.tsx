@@ -6,7 +6,7 @@ import Modal from '@mui/material/Modal';
 import Signin from '../../pages/signIn';
 import AppIcon from '../AppIcons';
 
-const style = {
+const forBox = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
@@ -25,7 +25,7 @@ const foButton={
   position:'absolute',
   top:15,
   left:10,
-  color:'red'
+
 }
 export default function BasicModal() {
   const [open, setOpen] = React.useState(false);
@@ -41,7 +41,7 @@ export default function BasicModal() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={forBox}>
           <Button onClick={handleClose} sx={foButton}>
             <AppIcon name='xmark' color='#fff' size={20}></AppIcon>
             </Button>

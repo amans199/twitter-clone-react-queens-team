@@ -1,0 +1,24 @@
+
+.tweetModal .profileImage{
+    background-color: #044D87;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.tweetModal .forSelect{
+    min-width: 120px;
+    border-radius: 25px;
+    height: 39px;
+  
+}
+.tweetModal svg ,::placeholder{
+    color: #1DA1F2 ;
+}
+::placeholder{
+    color: #657786 !important;
+    font-size: 25px;
+    font-weight: 500;
+}
+.tweetModal input{
+    font-size: 20px;
+}
