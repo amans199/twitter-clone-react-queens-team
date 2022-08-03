@@ -3,6 +3,7 @@ import './App.scss';
 import './scss/custom.scss'
 import HomePageLayout from './pages/HomePageLayout';
 import InputComp from './components/InputComp';
+import SignIn from './components/SignIn';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
         <button type="button" class="btn btn-primary">primary</button>
         <button type="button" class="btn btn-success">success</button>
+        <SignIn/>
 
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p className='text-info'>
